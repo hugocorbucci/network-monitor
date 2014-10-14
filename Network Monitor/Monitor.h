@@ -11,13 +11,15 @@
 
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
+#import "Pinger.h"
 
 @interface Monitor : NSObject {
     @private
-    NSString *_ipAddress;
+    NSThread *_background;
     NSStatusItem *_itemToUpdate;
-    BOOL _notifications;
-    BOOL _sound;
+    Pinger *_pinger;
+    NSDictionary *_alerts;
+    NSMutableDictionary *_enabledAlerts;
 }
 - (id) initWatching: (NSString*) ipAddress andUpdating: (NSStatusItem*) item;
 - (void) start;

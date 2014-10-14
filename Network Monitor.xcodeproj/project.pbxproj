@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3019ECAECF00C20354 /* Speaker.m */; };
+		CC71CA3319EDA47E00C20354 /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3219EDA47E00C20354 /* Notifier.m */; };
+		CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3519EDADBC00C20354 /* Pinger.m */; };
+		CC71CA3919EDB48100C20354 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3819EDB48100C20354 /* Logger.m */; };
 		CCEE216819EC5E7900CAF303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216719EC5E7900CAF303 /* main.m */; };
 		CCEE216B19EC5E7900CAF303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216A19EC5E7900CAF303 /* AppDelegate.m */; };
 		CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEE216C19EC5E7900CAF303 /* Images.xcassets */; };
@@ -28,6 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC71CA2D19ECADA300C20354 /* Speaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Speaker.h; sourceTree = "<group>"; };
+		CC71CA2E19ECAE7A00C20354 /* AlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertCenter.h; sourceTree = "<group>"; };
+		CC71CA2F19ECAEB100C20354 /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifier.h; sourceTree = "<group>"; };
+		CC71CA3019ECAECF00C20354 /* Speaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speaker.m; sourceTree = "<group>"; };
+		CC71CA3219EDA47E00C20354 /* Notifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notifier.m; sourceTree = "<group>"; };
+		CC71CA3419EDAD3700C20354 /* Pinger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pinger.h; sourceTree = "<group>"; };
+		CC71CA3519EDADBC00C20354 /* Pinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pinger.m; sourceTree = "<group>"; };
+		CC71CA3719EDB45C00C20354 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		CC71CA3819EDB48100C20354 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		CCEE216219EC5E7900CAF303 /* Network Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEE216619EC5E7900CAF303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCEE216719EC5E7900CAF303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +138,15 @@
 			children = (
 				CCEE218819EC64D800CAF303 /* Monitor.h */,
 				CCEE219019EC656700CAF303 /* Monitor.m */,
+				CC71CA2E19ECAE7A00C20354 /* AlertCenter.h */,
+				CC71CA2F19ECAEB100C20354 /* Notifier.h */,
+				CC71CA3219EDA47E00C20354 /* Notifier.m */,
+				CC71CA2D19ECADA300C20354 /* Speaker.h */,
+				CC71CA3019ECAECF00C20354 /* Speaker.m */,
+				CC71CA3419EDAD3700C20354 /* Pinger.h */,
+				CC71CA3519EDADBC00C20354 /* Pinger.m */,
+				CC71CA3719EDB45C00C20354 /* Logger.h */,
+				CC71CA3819EDB48100C20354 /* Logger.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -255,9 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC71CA3319EDA47E00C20354 /* Notifier.m in Sources */,
 				CCEE219119EC656700CAF303 /* Monitor.m in Sources */,
 				CCEE216B19EC5E7900CAF303 /* AppDelegate.m in Sources */,
 				CCEE216819EC5E7900CAF303 /* main.m in Sources */,
+				CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */,
+				CC71CA3919EDB48100C20354 /* Logger.m in Sources */,
+				CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +470,7 @@
 				CCEE218119EC5E7900CAF303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCEE218219EC5E7900CAF303 /* Build configuration list for PBXNativeTarget "Network MonitorTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +479,7 @@
 				CCEE218419EC5E7900CAF303 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,12 +20,12 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="7xh-Wl-Xvf" userLabel="StatusItem">
             <items>
-                <menuItem title="Turn sound off" keyEquivalent="s" id="Sqv-Bu-6hL">
+                <menuItem title="Turn sound off" state="on" keyEquivalent="s" id="Sqv-Bu-6hL">
                     <connections>
                         <action selector="toggleSound:" target="Voe-Tx-rLC" id="apx-Sm-CEQ"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Turn notifications off" keyEquivalent="n" id="keJ-08-UST">
+                <menuItem title="Turn notifications off" state="on" keyEquivalent="n" id="keJ-08-UST">
                     <connections>
                         <action selector="toggleNotifications:" target="Voe-Tx-rLC" id="BFR-O3-Tew"/>
                     </connections>
@@ -36,7 +36,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="0" y="0"/>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
         </menu>
     </objects>
 </document>

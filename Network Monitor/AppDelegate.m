@@ -12,12 +12,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [_statusItem setMenu: _statusMenu];
+    [_statusItem setHighlightMode:YES];
+    
     _monitor = [[Monitor alloc] initWatching: @"4.2.2.2" andUpdating: _statusItem];
     
-    [_statusItem setMenu: _statusMenu];
-    [_statusItem setImage: [NSImage imageNamed: @"unknown"]];
-    [_statusItem setHighlightMode:YES];
-    [_statusItem setToolTip: @"Your connection state is unknown"];
+    [_monitor start];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -27,21 +27,26 @@
 - (IBAction)toggleSound:(id)sender {
     NSMenuItem * soundItem = (NSMenuItem*) sender;
     
-    [_monitor setSoundAlertsEnabled: soundItem.state];
     [self toggleStateOfItem: soundItem];
+    [_monitor setSoundAlertsEnabled: soundItem.state];
 }
 
 - (IBAction)toggleNotifications:(id)sender {
     NSMenuItem * notificationItem = (NSMenuItem*) sender;
     
-    [_monitor setNotificationsEnabled: notificationItem.state];
     [self toggleStateOfItem: notificationItem];
+    [_monitor setNotificationsEnabled: notificationItem.state];
 }
 
 - (void)toggleStateOfItem:(NSMenuItem*) item {
     item.state = (item.state ^ 1);
     NSString *currentValue = @"off";
     NSString *nextValue = @"on";
+    if (item.state == YES) {
+        NSString *temp = currentValue;
+        currentValue = nextValue;
+        nextValue = temp;
+    }
     item.title = [item.title stringByReplacingOccurrencesOfString:currentValue withString:nextValue];
 }
 
