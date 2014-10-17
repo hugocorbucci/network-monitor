@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="520"
+   height="340"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="background_base.svg"
+   inkscape:export-filename="/Users/Thoughtworker/Documents/ObjectiveC/network-monitor/Background.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3823">
+      <stop
+         style="stop-color:#27c4a6;stop-opacity:0.4957265;"
+         offset="0"
+         id="stop3825" />
+      <stop
+         style="stop-color:#00a6a3;stop-opacity:0;"
+         offset="1"
+         id="stop3827" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3041"
+       is_visible="true" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3823"
+       id="radialGradient3829"
+       cx="256.07053"
+       cy="139.02133"
+       fx="256.07053"
+       fy="139.02133"
+       r="260.35263"
+       gradientTransform="matrix(-0.00751423,0.9408101,-1.2664081,-0.01010569,434.05245,-89.63477)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1676471"
+     inkscape:cx="187.18376"
+     inkscape:cy="135.74307"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1441"
+     inkscape:window-height="802"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       orientation="0,1"
+       position="-95.062972,284.33249"
+       id="guide3025" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-28.261965,113.04786"
+       id="guide3027" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="0,339.14358"
+       id="guide3813" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,339.14358"
+       id="guide3815" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="520.70529,339.14358"
+       id="guide3817" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,0.85642317"
+       id="guide3819" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-712.36217)">
+    <rect
+       style="fill:url(#radialGradient3829);fill-opacity:1"
+       id="rect3821"
+       width="520.70526"
+       height="338.28717"
+       x="0"
+       y="0.85641998"
+       transform="translate(0,712.36217)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3005"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(0,676.99498)"><flowRegion
+         id="flowRegion3007"><rect
+           id="rect3009"
+           width="520.70526"
+           height="234.91379"
+           x="0"
+           y="27.405542" /></flowRegion><flowPara
+         id="flowPara3011"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Calibri;-inkscape-font-specification:Calibri;font-size:36px">To install Network Monitor,</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Calibri;-inkscape-font-specification:Calibri;font-size:36px"
+         id="flowPara3015" /><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Calibri;-inkscape-font-specification:Calibri;font-size:36px"
+         id="flowPara3017" /><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Calibri;-inkscape-font-specification:Calibri;font-size:36px"
+         id="flowPara3019"> drag the icon on the left to the Application's folder on the right</flowPara></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Placeholders"
+     style="display:none">
+    <rect
+       style="fill:#000000"
+       id="rect2985"
+       width="72"
+       height="72"
+       x="103.93954"
+       y="61.30983" />
+    <rect
+       y="61.30983"
+       x="341.34003"
+       height="72"
+       width="72"
+       id="rect2987"
+       style="fill:#00ffff" />
+    <rect
+       y="245.30983"
+       x="103.93954"
+       height="72"
+       width="72"
+       id="rect3874"
+       style="fill:#ff0000" />
+    <rect
+       style="fill:#ffff00"
+       id="rect3876"
+       width="72"
+       height="72"
+       x="341.34003"
+       y="245.30983" />
+  </g>
+</svg>

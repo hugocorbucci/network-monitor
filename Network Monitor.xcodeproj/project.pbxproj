@@ -11,6 +11,9 @@
 		CC71CA3319EDA47E00C20354 /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3219EDA47E00C20354 /* Notifier.m */; };
 		CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3519EDADBC00C20354 /* Pinger.m */; };
 		CC71CA3919EDB48100C20354 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3819EDB48100C20354 /* Logger.m */; };
+		CC71CA3C19EDDE9F00C20354 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA3B19EDDE9F00C20354 /* LICENSE.txt */; };
+		CC71CA3E19EDDED900C20354 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA3D19EDDED900C20354 /* README.txt */; };
+		CC71CA4019EDDF1E00C20354 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3F19EDDF1E00C20354 /* README.md */; };
 		CCEE216819EC5E7900CAF303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216719EC5E7900CAF303 /* main.m */; };
 		CCEE216B19EC5E7900CAF303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216A19EC5E7900CAF303 /* AppDelegate.m */; };
 		CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEE216C19EC5E7900CAF303 /* Images.xcassets */; };
@@ -41,6 +44,10 @@
 		CC71CA3519EDADBC00C20354 /* Pinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pinger.m; sourceTree = "<group>"; };
 		CC71CA3719EDB45C00C20354 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		CC71CA3819EDB48100C20354 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		CC71CA3A19EDDE4B00C20354 /* create_dmg.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = create_dmg.command; sourceTree = "<group>"; };
+		CC71CA3B19EDDE9F00C20354 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CC71CA3D19EDDED900C20354 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		CC71CA3F19EDDF1E00C20354 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CCEE216219EC5E7900CAF303 /* Network Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEE216619EC5E7900CAF303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCEE216719EC5E7900CAF303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +91,10 @@
 				CCEE217819EC5E7900CAF303 /* Network MonitorTests */,
 				CCEE218D19EC651E00CAF303 /* Libraries */,
 				CCEE216319EC5E7900CAF303 /* Products */,
+				CC71CA3A19EDDE4B00C20354 /* create_dmg.command */,
+				CC71CA3B19EDDE9F00C20354 /* LICENSE.txt */,
+				CC71CA3F19EDDF1E00C20354 /* README.md */,
+				CC71CA3D19EDDED900C20354 /* README.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,7 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC71CA3C19EDDE9F00C20354 /* LICENSE.txt in Resources */,
 				CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */,
+				CC71CA3E19EDDED900C20354 /* README.txt in Resources */,
 				CCEE217019EC5E7900CAF303 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +296,7 @@
 				CCEE216819EC5E7900CAF303 /* main.m in Sources */,
 				CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */,
 				CC71CA3919EDB48100C20354 /* Logger.m in Sources */,
+				CC71CA4019EDDF1E00C20354 /* README.md in Sources */,
 				CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
