@@ -14,6 +14,7 @@
 		CC71CA3C19EDDE9F00C20354 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA3B19EDDE9F00C20354 /* LICENSE.txt */; };
 		CC71CA3E19EDDED900C20354 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA3D19EDDED900C20354 /* README.txt */; };
 		CC71CA4019EDDF1E00C20354 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3F19EDDF1E00C20354 /* README.md */; };
+		CC71CA6719F1CBAC00C20354 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA6519F1CBAC00C20354 /* Localizable.strings */; };
 		CCEE216819EC5E7900CAF303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216719EC5E7900CAF303 /* main.m */; };
 		CCEE216B19EC5E7900CAF303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216A19EC5E7900CAF303 /* AppDelegate.m */; };
 		CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEE216C19EC5E7900CAF303 /* Images.xcassets */; };
@@ -35,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC5663DC19F1CE350019B22D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "Network Monitor/fr.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CC5663DD19F1CEA30019B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		CC5663DF19F1CEAB0019B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		CC5663E019F1CEAC0019B22D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = fr.lproj/Info.plist; sourceTree = "<group>"; };
+		CC5663E119F1CEAF0019B22D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "pt-BR"; path = "pt-BR.lproj/Info.plist"; sourceTree = "<group>"; };
 		CC71CA2D19ECADA300C20354 /* Speaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Speaker.h; sourceTree = "<group>"; };
 		CC71CA2E19ECAE7A00C20354 /* AlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertCenter.h; sourceTree = "<group>"; };
 		CC71CA2F19ECAEB100C20354 /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifier.h; sourceTree = "<group>"; };
@@ -47,9 +53,13 @@
 		CC71CA3A19EDDE4B00C20354 /* create_dmg.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = create_dmg.command; sourceTree = "<group>"; };
 		CC71CA3B19EDDE9F00C20354 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		CC71CA3D19EDDED900C20354 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		CC71CA3F19EDDF1E00C20354 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CC71CA3F19EDDF1E00C20354 /* README.md */ = {isa = PBXFileReference; explicitFileType = net.daringfireball.markdown; fileEncoding = 4; path = README.md; sourceTree = "<group>"; };
+		CC71CA4F19F1CA2A00C20354 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		CC71CA6619F1CBAC00C20354 /* Base */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Base; path = "Network Monitor/Base.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CC71CA6D19F1CBE000C20354 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		CC71CA6E19F1CC1200C20354 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = "Network Monitor/en.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CC71CA7019F1CC1A00C20354 /* pt-BR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "Network Monitor/pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CCEE216219EC5E7900CAF303 /* Network Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCEE216619EC5E7900CAF303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCEE216719EC5E7900CAF303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCEE216919EC5E7900CAF303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCEE216A19EC5E7900CAF303 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,7 +131,8 @@
 		CCEE216519EC5E7900CAF303 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CCEE216619EC5E7900CAF303 /* Info.plist */,
+				CC71CA6519F1CBAC00C20354 /* Localizable.strings */,
+				CC5663DE19F1CEA30019B22D /* Info.plist */,
 				CCEE216719EC5E7900CAF303 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -252,6 +263,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				"pt-BR",
 			);
 			mainGroup = CCEE215919EC5E7900CAF303;
 			productRefGroup = CCEE216319EC5E7900CAF303 /* Products */;
@@ -269,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC71CA6719F1CBAC00C20354 /* Localizable.strings in Resources */,
 				CC71CA3C19EDDE9F00C20354 /* LICENSE.txt in Resources */,
 				CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */,
 				CC71CA3E19EDDED900C20354 /* README.txt in Resources */,
@@ -320,10 +334,35 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CC5663DE19F1CEA30019B22D /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC5663DD19F1CEA30019B22D /* Base */,
+				CC5663DF19F1CEAB0019B22D /* en */,
+				CC5663E019F1CEAC0019B22D /* fr */,
+				CC5663E119F1CEAF0019B22D /* pt-BR */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		CC71CA6519F1CBAC00C20354 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC71CA6619F1CBAC00C20354 /* Base */,
+				CC71CA6E19F1CC1200C20354 /* en */,
+				CC71CA7019F1CC1A00C20354 /* pt-BR */,
+				CC5663DC19F1CE350019B22D /* fr */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		CCEE216E19EC5E7900CAF303 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CCEE216F19EC5E7900CAF303 /* Base */,
+				CC71CA4F19F1CA2A00C20354 /* pt-BR */,
+				CC71CA6D19F1CBE000C20354 /* fr */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

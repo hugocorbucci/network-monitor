@@ -12,7 +12,7 @@
 
 - (void)announce:(id)message {
     NSUserNotification *notification = [[NSUserNotification alloc] init];
-    notification.title = @"Network Notifier";
+    notification.title = NSLocalizedString(@"AppName", @"The app name for notification center title");
     notification.informativeText = message;
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification: notification];

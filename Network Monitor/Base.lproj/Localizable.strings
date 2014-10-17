@@ -1,0 +1,23 @@
+﻿/* The app name for notification center title */
+"AppName" = "Network Monitor";
+
+/* Message shown/said when user is connected to the Internet */
+"connected_message" = "You are connected to the Internet";
+
+/* Message shown/said when user is NOT connected to the Internet */
+"disconnected_message" = "You are NOT connected to the Internet";
+
+/* Turn on or off the notification type */
+"sound_on" = "Turn sound on";
+
+/* Turn on or off the notification type */
+"sound_off" = "Turn sound off";
+
+/* Turn on or off the notification type */
+"notification_on" = "Turn notifications on";
+
+/* Turn on or off the notification type */
+"notification_off" = "Turn notifications off";
+
+/* Message shown/said when we don't know what the status of the connection is */
+"unknown_state_message" = "Your connection status is unknown";

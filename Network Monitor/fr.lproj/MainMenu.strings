@@ -1,0 +1,9 @@
+
+/* Class = "NSMenuItem"; title = "Turn sound off"; ObjectID = "Sqv-Bu-6hL"; */
+"Sqv-Bu-6hL.title" = "Désactiver sons";
+
+/* Class = "NSMenuItem"; title = "Turn notifications off"; ObjectID = "keJ-08-UST"; */
+"keJ-08-UST.title" = "Désactiver notifications";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "scY-26-YWS"; */
+"scY-26-YWS.title" = "Quitter";

@@ -1,0 +1,24 @@
+﻿/* The app name for notification center title */
+"AppName" = "Monitor de Rede";
+
+/* Message shown/said when user is connected to the Internet */
+"connected_message" = "Você está conectado à Internet";
+
+/* Message shown/said when user is NOT connected to the Internet */
+"disconnected_message" = "Você não está conectado à Internet";
+
+/* Turn on or off the notification type */
+"sound_on" = "Ativar sons";
+
+/* Turn on or off the notification type */
+"sound_off" = "Desativar sons";
+
+/* Turn on or off the notification type */
+"notification_on" = "Ativar notificações";
+
+/* Turn on or off the notification type */
+"notification_off" = "Desativar notificações";
+
+/* Message shown/said when we don't know what the status of the connection is */
+"unknown_state_message" = "O status de sua conexão é desconhecido";
+

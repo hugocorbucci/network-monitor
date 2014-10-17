@@ -43,9 +43,9 @@ NSString *const LOGGER_NAME = @"Logs";
         LOGGER_NAME : _alerts[LOGGER_NAME]
         }];
     _messages = @{
-                  CONNECTED : @"You are connected to the Internet.",
-                  DISCONNECTED : @"You are NOT connected to the Internet.",
-                  UNKNOWN: @"Your connection state is unknown."
+                  CONNECTED : NSLocalizedString(@"connected_message", @"Message shown/said when user is connected to the Internet"),
+                  DISCONNECTED : NSLocalizedString(@"disconnected_message", @"Message shown/said when user is NOT connected to the Internet"),
+                  UNKNOWN: NSLocalizedString(@"unknown_state_message", @"Message shown/said when we don't know what the status of the connection is"),
     };
     _itemToUpdate = item;
     
