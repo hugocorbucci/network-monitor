@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC19379819F1D2E2005C0EE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC19379719F1D2E2005C0EE0 /* Info.plist */; };
+		CC19379B19F1D3A6005C0EE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC19379919F1D3A6005C0EE0 /* InfoPlist.strings */; };
 		CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3019ECAECF00C20354 /* Speaker.m */; };
 		CC71CA3319EDA47E00C20354 /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3219EDA47E00C20354 /* Notifier.m */; };
 		CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3519EDADBC00C20354 /* Pinger.m */; };
@@ -36,11 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC19379719F1D2E2005C0EE0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC19379A19F1D3A6005C0EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC19379C19F1D3CC005C0EE0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC19379D19F1D3CE005C0EE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC19379E19F1D3CF005C0EE0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CC5663DC19F1CE350019B22D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "Network Monitor/fr.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		CC5663DD19F1CEA30019B22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
-		CC5663DF19F1CEAB0019B22D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
-		CC5663E019F1CEAC0019B22D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = fr.lproj/Info.plist; sourceTree = "<group>"; };
-		CC5663E119F1CEAF0019B22D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "pt-BR"; path = "pt-BR.lproj/Info.plist"; sourceTree = "<group>"; };
 		CC71CA2D19ECADA300C20354 /* Speaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Speaker.h; sourceTree = "<group>"; };
 		CC71CA2E19ECAE7A00C20354 /* AlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertCenter.h; sourceTree = "<group>"; };
 		CC71CA2F19ECAEB100C20354 /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifier.h; sourceTree = "<group>"; };
@@ -131,9 +134,10 @@
 		CCEE216519EC5E7900CAF303 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC19379719F1D2E2005C0EE0 /* Info.plist */,
 				CC71CA6519F1CBAC00C20354 /* Localizable.strings */,
-				CC5663DE19F1CEA30019B22D /* Info.plist */,
 				CCEE216719EC5E7900CAF303 /* main.m */,
+				CC19379919F1D3A6005C0EE0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -283,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC71CA6719F1CBAC00C20354 /* Localizable.strings in Resources */,
+				CC19379B19F1D3A6005C0EE0 /* InfoPlist.strings in Resources */,
 				CC71CA3C19EDDE9F00C20354 /* LICENSE.txt in Resources */,
+				CC19379819F1D2E2005C0EE0 /* Info.plist in Resources */,
 				CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */,
 				CC71CA3E19EDDED900C20354 /* README.txt in Resources */,
 				CCEE217019EC5E7900CAF303 /* MainMenu.xib in Resources */,
@@ -334,15 +340,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CC5663DE19F1CEA30019B22D /* Info.plist */ = {
+		CC19379919F1D3A6005C0EE0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CC5663DD19F1CEA30019B22D /* Base */,
-				CC5663DF19F1CEAB0019B22D /* en */,
-				CC5663E019F1CEAC0019B22D /* fr */,
-				CC5663E119F1CEAF0019B22D /* pt-BR */,
+				CC19379A19F1D3A6005C0EE0 /* Base */,
+				CC19379C19F1D3CC005C0EE0 /* fr */,
+				CC19379D19F1D3CE005C0EE0 /* en */,
+				CC19379E19F1D3CF005C0EE0 /* pt-BR */,
 			);
-			name = Info.plist;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		CC71CA6519F1CBAC00C20354 /* Localizable.strings */ = {
