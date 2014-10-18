@@ -14,7 +14,8 @@ BACKGROUND_IMG_NAME="Background.png"
 CURRENT_DIR=${0%/*}
 
 BUILD_DIR="${CURRENT_DIR}/Build"
-BUILT_PRODUCTS_DIR="${BUILD_DIR}/Products/Release"
+CONFIGURATION="Release"
+BUILT_PRODUCTS_DIR="${BUILD_DIR}/Products/${CONFIGURATION}"
 APP_FOLDER="${BUILT_PRODUCTS_DIR}/${APP_NAME}.app"
 TEMP_FILES_DIR="${BUILD_DIR}/tmp"
 STAGING_DIR="${TEMP_FILES_DIR}/disk"
@@ -36,7 +37,7 @@ fi
 # Build executable
 rm -Rf "${BUILT_PRODUCTS_DIR}"
 mkdir -p "${BUILT_PRODUCTS_DIR}"
-BUILT_PRODUCTS_DIR="${BUILT_PRODUCTS_DIR}" xcodebuild -target 'Network Monitor' -scheme 'Network Monitor' -configuration 'Release' build
+BUILT_PRODUCTS_DIR="${BUILT_PRODUCTS_DIR}" xcodebuild -target 'Network Monitor' -scheme 'Network Monitor' -configuration "#{CONFIGURATION}" build
 
 # Ensure temporary folders exist
 mkdir -p "${DMG_DIR}"

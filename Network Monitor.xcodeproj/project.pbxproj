@@ -12,13 +12,11 @@
 		CC71CA3319EDA47E00C20354 /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3219EDA47E00C20354 /* Notifier.m */; };
 		CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3519EDADBC00C20354 /* Pinger.m */; };
 		CC71CA3919EDB48100C20354 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3819EDB48100C20354 /* Logger.m */; };
-		CC71CA3C19EDDE9F00C20354 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA3B19EDDE9F00C20354 /* LICENSE.txt */; };
-		CC71CA3E19EDDED900C20354 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA3D19EDDED900C20354 /* README.txt */; };
 		CC71CA6719F1CBAC00C20354 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA6519F1CBAC00C20354 /* Localizable.strings */; };
+		CC99CA6D19F2EAB800033934 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCEE216E19EC5E7900CAF303 /* MainMenu.xib */; };
 		CCEE216819EC5E7900CAF303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216719EC5E7900CAF303 /* main.m */; };
 		CCEE216B19EC5E7900CAF303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216A19EC5E7900CAF303 /* AppDelegate.m */; };
 		CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEE216C19EC5E7900CAF303 /* Images.xcassets */; };
-		CCEE217019EC5E7900CAF303 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCEE216E19EC5E7900CAF303 /* MainMenu.xib */; };
 		CCEE217C19EC5E7900CAF303 /* Network_MonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE217B19EC5E7900CAF303 /* Network_MonitorTests.m */; };
 		CCEE218E19EC653400CAF303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEE218B19EC651800CAF303 /* Foundation.framework */; };
 		CCEE218F19EC653A00CAF303 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEE218919EC651000CAF303 /* Cocoa.framework */; };
@@ -61,6 +59,7 @@
 		CC71CA6D19F1CBE000C20354 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		CC71CA6E19F1CC1200C20354 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = "Network Monitor/en.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CC71CA7019F1CC1A00C20354 /* pt-BR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "Network Monitor/pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CC99CA6E19F2EB2800033934 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		CCEE216219EC5E7900CAF303 /* Network Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEE216719EC5E7900CAF303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCEE216919EC5E7900CAF303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -292,12 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC99CA6D19F2EAB800033934 /* MainMenu.xib in Resources */,
 				CC71CA6719F1CBAC00C20354 /* Localizable.strings in Resources */,
 				CC19379B19F1D3A6005C0EE0 /* InfoPlist.strings in Resources */,
-				CC71CA3C19EDDE9F00C20354 /* LICENSE.txt in Resources */,
 				CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */,
-				CC71CA3E19EDDED900C20354 /* README.txt in Resources */,
-				CCEE217019EC5E7900CAF303 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +370,7 @@
 				CCEE216F19EC5E7900CAF303 /* Base */,
 				CC71CA4F19F1CA2A00C20354 /* pt-BR */,
 				CC71CA6D19F1CBE000C20354 /* fr */,
+				CC99CA6E19F2EB2800033934 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
