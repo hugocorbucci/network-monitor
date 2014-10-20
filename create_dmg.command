@@ -16,6 +16,7 @@ CURRENT_DIR=${0%/*}
 BUILD_DIR="${CURRENT_DIR}/Build"
 CONFIGURATION="Release"
 BUILT_PRODUCTS_DIR="${BUILD_DIR}/Products/${CONFIGURATION}"
+INTERMEDIATES_DIR="${BUILD_DIR}/Intermediates"
 APP_FOLDER="${BUILT_PRODUCTS_DIR}/${APP_NAME}.app"
 TEMP_FILES_DIR="${BUILD_DIR}/tmp"
 STAGING_DIR="${TEMP_FILES_DIR}/disk"
@@ -36,8 +37,9 @@ fi
 
 # Build executable
 rm -Rf "${BUILT_PRODUCTS_DIR}"
+rm -Rf "${INTERMEDIATES_DIR}"
 mkdir -p "${BUILT_PRODUCTS_DIR}"
-BUILT_PRODUCTS_DIR="${BUILT_PRODUCTS_DIR}" xcodebuild -target 'Network Monitor' -scheme 'Network Monitor' -configuration "#{CONFIGURATION}" build
+BUILT_PRODUCTS_DIR="${BUILT_PRODUCTS_DIR}" xcodebuild -target "${APP_NAME}" -scheme 'Network Monitor' -configuration "#{CONFIGURATION}" build
 
 # Ensure temporary folders exist
 mkdir -p "${DMG_DIR}"
