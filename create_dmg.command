@@ -144,6 +144,11 @@ end tell
 
 sync
 
+# Sign the app again if a DEVELOPER_ID variable is provided since building in a DMG loses the signature
+if [ ! -z "${DEVELOPER_ID}" ]; then
+/usr/bin/codesign --force --sign "${DEVELOPER_ID}" --deep --entitlements "${INTERMEDIATES_DIR}/Network Monitor.build/${CONFIGURATION}/Network Monitor.build/${APP_NAME}.app.xcent" "/Volumes/${VOL_NAME}/${APP_NAME}.app"
+fi
+
 # unmount it
 hdiutil detach "${DEVICE}"
 
