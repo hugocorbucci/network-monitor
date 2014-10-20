@@ -27,27 +27,15 @@
 - (IBAction)toggleSound:(id)sender {
     NSMenuItem * soundItem = (NSMenuItem*) sender;
     
-    [self toggleStateOfItem: soundItem named: @"sound"];
+    soundItem.state = (soundItem.state ^ 1);
     [_monitor setSoundAlertsEnabled: soundItem.state];
 }
 
 - (IBAction)toggleNotifications:(id)sender {
     NSMenuItem * notificationItem = (NSMenuItem*) sender;
     
-    [self toggleStateOfItem: notificationItem named: @"notification"];
+    notificationItem.state = (notificationItem.state ^ 1);
     [_monitor setNotificationsEnabled: notificationItem.state];
-}
-
-- (void)toggleStateOfItem:(NSMenuItem*) item named: (NSString*) key_base {
-    item.state = (item.state ^ 1);
-    NSString *currentValue = @"_off";
-    NSString *nextValue = @"_on";
-    if (item.state == YES) {
-        NSString *temp = currentValue;
-        currentValue = nextValue;
-        nextValue = temp;
-    }
-    item.title = NSLocalizedString([key_base stringByAppendingString: nextValue], @"Turn on or off the notification type");
 }
 
 @end

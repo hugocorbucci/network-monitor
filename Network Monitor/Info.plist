@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Network Monitor</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.hugocorbucci.networkmonitor</string>
 	<key>CFBundleInfoDictionaryVersion</key>

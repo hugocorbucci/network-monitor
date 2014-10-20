@@ -121,7 +121,6 @@
 		CCEE216419EC5E7900CAF303 /* Network Monitor */ = {
 			isa = PBXGroup;
 			children = (
-				CC65A87E19F2C1B50010E8A4 /* Network Monitor.entitlements */,
 				CCEE218519EC5E9A00CAF303 /* Model */,
 				CCEE218619EC5E9F00CAF303 /* Controller */,
 				CCEE218719EC5EA500CAF303 /* User Interface */,
@@ -133,6 +132,7 @@
 		CCEE216519EC5E7900CAF303 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC65A87E19F2C1B50010E8A4 /* Network Monitor.entitlements */,
 				CC19379719F1D2E2005C0EE0 /* Info.plist */,
 				CC71CA6519F1CBAC00C20354 /* Localizable.strings */,
 				CCEE216719EC5E7900CAF303 /* main.m */,

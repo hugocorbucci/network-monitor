@@ -38,7 +38,6 @@ NSString *const LOGGER_NAME = @"Logs";
         LOGGER_NAME : [[Logger alloc] init]
     };
     _enabledAlerts = [NSMutableDictionary dictionaryWithDictionary: @{
-        SOUND_NAME: _alerts[SOUND_NAME],
         NOTIFICATION_NAME: _alerts[NOTIFICATION_NAME],
         LOGGER_NAME : _alerts[LOGGER_NAME]
         }];
