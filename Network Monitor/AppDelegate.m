@@ -9,15 +9,11 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
+- (void)awakeFromNib {
+    [self initializeStatusItem];
+}
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [_statusItem setMenu: _statusMenu];
-    [_statusItem setHighlightMode:YES];
-    
-    _monitor = [[Monitor alloc] initWatching: @"4.2.2.2" andUpdating: _statusItem];
-    
-    [_monitor start];
+    [self initializeStatusItem];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -38,4 +34,16 @@
     [_monitor setNotificationsEnabled: notificationItem.state];
 }
 
+# pragma private
+- (void)initializeStatusItem {
+    if (!_statusItem) {
+        _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+        [_statusItem setMenu: _statusMenu];
+        [_statusItem setHighlightMode:YES];
+        
+        _monitor = [[Monitor alloc] initWatching: @"4.2.2.2" andUpdating: _statusItem];
+        
+        [_monitor start];
+    }
+}
 @end
