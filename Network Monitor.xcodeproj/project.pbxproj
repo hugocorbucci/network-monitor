@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CC19379B19F1D3A6005C0EE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC19379919F1D3A6005C0EE0 /* InfoPlist.strings */; };
-		CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3019ECAECF00C20354 /* Speaker.m */; };
-		CC71CA3319EDA47E00C20354 /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3219EDA47E00C20354 /* Notifier.m */; };
-		CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3519EDADBC00C20354 /* Pinger.m */; };
-		CC71CA3919EDB48100C20354 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3819EDB48100C20354 /* Logger.m */; };
+		CC23DD0419F5A60900E88823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23DD0319F5A60900E88823 /* AppDelegate.swift */; };
+		CC23DD0619F5A63200E88823 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23DD0519F5A63200E88823 /* Monitor.swift */; };
+		CC23DD0819F5A64B00E88823 /* Pinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23DD0719F5A64B00E88823 /* Pinger.swift */; };
+		CC23DD0A19F5A66D00E88823 /* AlertCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23DD0919F5A66D00E88823 /* AlertCenter.swift */; };
+		CC23DD0C19F5A68300E88823 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23DD0B19F5A68300E88823 /* Speaker.swift */; };
+		CC23DD0E19F5A69E00E88823 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23DD0D19F5A69E00E88823 /* Notifier.swift */; };
+		CC23DD1019F5A6B000E88823 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23DD0F19F5A6B000E88823 /* Logger.swift */; };
 		CC71CA6719F1CBAC00C20354 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC71CA6519F1CBAC00C20354 /* Localizable.strings */; };
 		CC99CA6D19F2EAB800033934 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCEE216E19EC5E7900CAF303 /* MainMenu.xib */; };
-		CCEE216819EC5E7900CAF303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216719EC5E7900CAF303 /* main.m */; };
-		CCEE216B19EC5E7900CAF303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE216A19EC5E7900CAF303 /* AppDelegate.m */; };
 		CCEE216D19EC5E7900CAF303 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEE216C19EC5E7900CAF303 /* Images.xcassets */; };
 		CCEE217C19EC5E7900CAF303 /* Network_MonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE217B19EC5E7900CAF303 /* Network_MonitorTests.m */; };
 		CCEE218E19EC653400CAF303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEE218B19EC651800CAF303 /* Foundation.framework */; };
 		CCEE218F19EC653A00CAF303 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEE218919EC651000CAF303 /* Cocoa.framework */; };
-		CCEE219119EC656700CAF303 /* Monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEE219019EC656700CAF303 /* Monitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,17 +39,15 @@
 		CC19379C19F1D3CC005C0EE0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC19379D19F1D3CE005C0EE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC19379E19F1D3CF005C0EE0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CC23DD0319F5A60900E88823 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC23DD0519F5A63200E88823 /* Monitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
+		CC23DD0719F5A64B00E88823 /* Pinger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinger.swift; sourceTree = "<group>"; };
+		CC23DD0919F5A66D00E88823 /* AlertCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCenter.swift; sourceTree = "<group>"; };
+		CC23DD0B19F5A68300E88823 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		CC23DD0D19F5A69E00E88823 /* Notifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		CC23DD0F19F5A6B000E88823 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		CC5663DC19F1CE350019B22D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "Network Monitor/fr.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CC65A87E19F2C1B50010E8A4 /* Network Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Network Monitor.entitlements"; sourceTree = "<group>"; };
-		CC71CA2D19ECADA300C20354 /* Speaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Speaker.h; sourceTree = "<group>"; };
-		CC71CA2E19ECAE7A00C20354 /* AlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertCenter.h; sourceTree = "<group>"; };
-		CC71CA2F19ECAEB100C20354 /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifier.h; sourceTree = "<group>"; };
-		CC71CA3019ECAECF00C20354 /* Speaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speaker.m; sourceTree = "<group>"; };
-		CC71CA3219EDA47E00C20354 /* Notifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notifier.m; sourceTree = "<group>"; };
-		CC71CA3419EDAD3700C20354 /* Pinger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pinger.h; sourceTree = "<group>"; };
-		CC71CA3519EDADBC00C20354 /* Pinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pinger.m; sourceTree = "<group>"; };
-		CC71CA3719EDB45C00C20354 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
-		CC71CA3819EDB48100C20354 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		CC71CA3A19EDDE4B00C20354 /* create_dmg.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = create_dmg.command; sourceTree = "<group>"; };
 		CC71CA3B19EDDE9F00C20354 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		CC71CA3D19EDDED900C20354 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
@@ -61,18 +59,13 @@
 		CC71CA7019F1CC1A00C20354 /* pt-BR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "Network Monitor/pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CC99CA6E19F2EB2800033934 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		CCEE216219EC5E7900CAF303 /* Network Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCEE216719EC5E7900CAF303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CCEE216919EC5E7900CAF303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CCEE216A19EC5E7900CAF303 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CCEE216C19EC5E7900CAF303 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CCEE216F19EC5E7900CAF303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CCEE217519EC5E7900CAF303 /* Network MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEE217A19EC5E7900CAF303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCEE217B19EC5E7900CAF303 /* Network_MonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network_MonitorTests.m; sourceTree = "<group>"; };
-		CCEE218819EC64D800CAF303 /* Monitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monitor.h; sourceTree = "<group>"; };
 		CCEE218919EC651000CAF303 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CCEE218B19EC651800CAF303 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CCEE219019EC656700CAF303 /* Monitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +128,6 @@
 			children = (
 				CC19379719F1D2E2005C0EE0 /* Info.plist */,
 				CC71CA6519F1CBAC00C20354 /* Localizable.strings */,
-				CCEE216719EC5E7900CAF303 /* main.m */,
 				CC19379919F1D3A6005C0EE0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -161,17 +153,12 @@
 		CCEE218519EC5E9A00CAF303 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				CCEE218819EC64D800CAF303 /* Monitor.h */,
-				CCEE219019EC656700CAF303 /* Monitor.m */,
-				CC71CA2E19ECAE7A00C20354 /* AlertCenter.h */,
-				CC71CA2F19ECAEB100C20354 /* Notifier.h */,
-				CC71CA3219EDA47E00C20354 /* Notifier.m */,
-				CC71CA2D19ECADA300C20354 /* Speaker.h */,
-				CC71CA3019ECAECF00C20354 /* Speaker.m */,
-				CC71CA3419EDAD3700C20354 /* Pinger.h */,
-				CC71CA3519EDADBC00C20354 /* Pinger.m */,
-				CC71CA3719EDB45C00C20354 /* Logger.h */,
-				CC71CA3819EDB48100C20354 /* Logger.m */,
+				CC23DD0519F5A63200E88823 /* Monitor.swift */,
+				CC23DD0719F5A64B00E88823 /* Pinger.swift */,
+				CC23DD0919F5A66D00E88823 /* AlertCenter.swift */,
+				CC23DD0B19F5A68300E88823 /* Speaker.swift */,
+				CC23DD0D19F5A69E00E88823 /* Notifier.swift */,
+				CC23DD0F19F5A6B000E88823 /* Logger.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,8 +166,7 @@
 		CCEE218619EC5E9F00CAF303 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CCEE216919EC5E7900CAF303 /* AppDelegate.h */,
-				CCEE216A19EC5E7900CAF303 /* AppDelegate.m */,
+				CC23DD0319F5A60900E88823 /* AppDelegate.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -312,13 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC71CA3319EDA47E00C20354 /* Notifier.m in Sources */,
-				CCEE219119EC656700CAF303 /* Monitor.m in Sources */,
-				CCEE216B19EC5E7900CAF303 /* AppDelegate.m in Sources */,
-				CCEE216819EC5E7900CAF303 /* main.m in Sources */,
-				CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */,
-				CC71CA3919EDB48100C20354 /* Logger.m in Sources */,
-				CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */,
+				CC23DD0419F5A60900E88823 /* AppDelegate.swift in Sources */,
+				CC23DD0C19F5A68300E88823 /* Speaker.swift in Sources */,
+				CC23DD0E19F5A69E00E88823 /* Notifier.swift in Sources */,
+				CC23DD0619F5A63200E88823 /* Monitor.swift in Sources */,
+				CC23DD0A19F5A66D00E88823 /* AlertCenter.swift in Sources */,
+				CC23DD0819F5A64B00E88823 /* Pinger.swift in Sources */,
+				CC23DD1019F5A6B000E88823 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Network Monitor/Network Monitor.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -467,6 +454,8 @@
 				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--deep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -475,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Network Monitor/Network Monitor.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -484,6 +474,7 @@
 				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--deep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

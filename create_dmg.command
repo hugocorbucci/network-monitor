@@ -8,7 +8,7 @@
 
 set -ex
 APP_NAME="Network Monitor"
-VERSION="1.0.0"
+VERSION=`grep -A1 CFBundleShortVersionString Network\ Monitor/Info.plist | tail -1 | sed -e 's/<string>\([^<]*\)<\/string>/\1/g' | awk '{print $1}'`
 BACKGROUND_IMG_NAME="Background.png"
 
 CURRENT_DIR=${0%/*}
