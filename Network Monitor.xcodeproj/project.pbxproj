@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC19379B19F1D3A6005C0EE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC19379919F1D3A6005C0EE0 /* InfoPlist.strings */; };
+		CC6C10CD19F6B00F000A04C0 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6C10CC19F6B00F000A04C0 /* CoreServices.framework */; };
 		CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3019ECAECF00C20354 /* Speaker.m */; };
 		CC71CA3319EDA47E00C20354 /* Notifier.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3219EDA47E00C20354 /* Notifier.m */; };
 		CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3519EDADBC00C20354 /* Pinger.m */; };
@@ -41,6 +42,7 @@
 		CC19379E19F1D3CF005C0EE0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CC5663DC19F1CE350019B22D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "Network Monitor/fr.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CC65A87E19F2C1B50010E8A4 /* Network Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Network Monitor.entitlements"; sourceTree = "<group>"; };
+		CC6C10CC19F6B00F000A04C0 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		CC71CA2D19ECADA300C20354 /* Speaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Speaker.h; sourceTree = "<group>"; };
 		CC71CA2E19ECAE7A00C20354 /* AlertCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertCenter.h; sourceTree = "<group>"; };
 		CC71CA2F19ECAEB100C20354 /* Notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifier.h; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6C10CD19F6B00F000A04C0 /* CoreServices.framework in Frameworks */,
 				CCEE218F19EC653A00CAF303 /* Cocoa.framework in Frameworks */,
 				CCEE218E19EC653400CAF303 /* Foundation.framework in Frameworks */,
 			);
@@ -98,6 +101,7 @@
 		CCEE215919EC5E7900CAF303 = {
 			isa = PBXGroup;
 			children = (
+				CC6C10CC19F6B00F000A04C0 /* CoreServices.framework */,
 				CCEE216419EC5E7900CAF303 /* Network Monitor */,
 				CCEE217819EC5E7900CAF303 /* Network MonitorTests */,
 				CCEE218D19EC651E00CAF303 /* Libraries */,

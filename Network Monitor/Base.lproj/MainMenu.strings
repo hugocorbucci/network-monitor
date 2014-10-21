@@ -5,5 +5,8 @@
 /* Class = "NSMenuItem"; title = "Turn notifications off"; ObjectID = "keJ-08-UST"; */
 "keJ-08-UST.title" = "Notification alerts";
 
+/* Class = "NSMenuItem"; title = "Launch at Login"; ObjectID = "8Ld-Dx-CeZ"; */
+"8Ld-Dx-CeZ.title" = "Launch at Login";
+
 /* Class = "NSMenuItem"; title = "Quit"; ObjectID = "scY-26-YWS"; */
 "scY-26-YWS.title" = "Quit";

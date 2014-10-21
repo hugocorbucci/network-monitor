@@ -20,17 +20,25 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="7xh-Wl-Xvf" userLabel="StatusItem">
             <items>
-                <menuItem title="Sound alerts" keyEquivalent="s" id="Sqv-Bu-6hL">
+                <menuItem title="Sound alerts" tag="1" keyEquivalent="s" id="Sqv-Bu-6hL">
                     <connections>
                         <action selector="toggleSound:" target="Voe-Tx-rLC" id="apx-Sm-CEQ"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Notification alerts" state="on" keyEquivalent="n" id="keJ-08-UST">
+                <menuItem title="Notification alerts" state="on" tag="2" keyEquivalent="n" id="keJ-08-UST">
                     <connections>
                         <action selector="toggleNotifications:" target="Voe-Tx-rLC" id="BFR-O3-Tew"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Quit" keyEquivalent="q" id="scY-26-YWS">
+                <menuItem isSeparatorItem="YES" id="Dlh-fr-89X"/>
+                <menuItem title="Launch at Login" state="on" tag="3" id="8Ld-Dx-CeZ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleLaunchAtLogin:" target="Voe-Tx-rLC" id="tD4-tD-R1R"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="o5v-WB-T5H"/>
+                <menuItem title="Quit" tag="4" keyEquivalent="q" id="scY-26-YWS">
                     <connections>
                         <action selector="terminate:" target="-1" id="uFg-X0-6ut"/>
                     </connections>

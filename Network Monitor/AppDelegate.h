@@ -14,9 +14,11 @@
     IBOutlet NSMenu * _statusMenu;
     NSStatusItem * _statusItem;
     Monitor * _monitor;
+    NSUserDefaults* _defaults;
 }
 
 - (IBAction)toggleSound:(id)sender;
 - (IBAction)toggleNotifications:(id)sender;
+- (IBAction)toggleLaunchAtLogin:(id)sender;
 @end
 

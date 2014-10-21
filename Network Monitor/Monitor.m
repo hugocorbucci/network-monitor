@@ -38,9 +38,8 @@ NSString *const LOGGER_NAME = @"Logs";
         LOGGER_NAME : [[Logger alloc] init]
     };
     _enabledAlerts = [NSMutableDictionary dictionaryWithDictionary: @{
-        NOTIFICATION_NAME: _alerts[NOTIFICATION_NAME],
         LOGGER_NAME : _alerts[LOGGER_NAME]
-        }];
+    }];
     _messages = @{
                   CONNECTED : NSLocalizedString(@"connected_message", @"Message shown/said when user is connected to the Internet"),
                   DISCONNECTED : NSLocalizedString(@"disconnected_message", @"Message shown/said when user is NOT connected to the Internet"),
