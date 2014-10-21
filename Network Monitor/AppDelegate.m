@@ -21,7 +21,8 @@ NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
         NOTIFICATION_PREFERENCE: [NSNumber numberWithBool:YES]
     }];
     
-    _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    float iconWidth = [[NSImage imageNamed: @"unknown"] size].width;
+    _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength: iconWidth];
     [_statusItem setMenu: _statusMenu];
     [_statusItem setHighlightMode:YES];
     

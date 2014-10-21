@@ -101,7 +101,6 @@
 		CCEE215919EC5E7900CAF303 = {
 			isa = PBXGroup;
 			children = (
-				CC6C10CC19F6B00F000A04C0 /* CoreServices.framework */,
 				CCEE216419EC5E7900CAF303 /* Network Monitor */,
 				CCEE217819EC5E7900CAF303 /* Network MonitorTests */,
 				CCEE218D19EC651E00CAF303 /* Libraries */,
@@ -201,6 +200,7 @@
 		CCEE218D19EC651E00CAF303 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CC6C10CC19F6B00F000A04C0 /* CoreServices.framework */,
 				CCEE218B19EC651800CAF303 /* Foundation.framework */,
 				CCEE218919EC651000CAF303 /* Cocoa.framework */,
 			);
