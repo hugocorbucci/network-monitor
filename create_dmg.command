@@ -35,6 +35,10 @@ if [ -d "$CURRENT_DIR" ]; then
   cd "$CURRENT_DIR"
 fi
 
+if [ -f ".env" ]; then
+  source .env
+fi
+
 # Build executable
 rm -Rf "${BUILT_PRODUCTS_DIR}"
 rm -Rf "${INTERMEDIATES_DIR}"
