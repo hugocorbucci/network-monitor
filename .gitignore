@@ -18,6 +18,8 @@ DerivedData
 *.xcuserstate
 .DS_Store
 .env
+*.png
+*.svg
 
 # CocoaPods
 #

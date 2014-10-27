@@ -78,7 +78,7 @@ NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
      }];
 }
 - (void) synchronizeMenuItem: (NSMenuItem*) item withPreference: (NSString*) preferenceKey updating: (void (^)(BOOL state)) callback {
-    item.state = [[NSUserDefaults standardUserDefaults] boolForKey: preferenceKey];
+    item.state = [_defaults boolForKey: preferenceKey];
     callback(item.state);
 }
 - (void) addAppAsLoginItem {
