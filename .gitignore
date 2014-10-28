@@ -1,0 +1,7 @@
+*.png
+*.svg
+Build
+Network Monitor
+Network Monitor.*
+.DS_Store
+.env

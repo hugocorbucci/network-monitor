@@ -68,12 +68,23 @@ header {
   padding-bottom: 25px;
 }
 
+header img {
+  float: left;
+}
+
 header h1 {
   font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
   letter-spacing: -1px;
   font-size: 48px;
   color: #303030;
   line-height: 1.2;
+  clear: right;
+  height: 64px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #303030;
 }
 
 header h2 {
@@ -154,6 +165,12 @@ a.button span {
 
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
+}
+#download-appstore span {
+  background: transparent url(../images/appstore-icon.png) 12px 50% no-repeat;
+}
+#download-dmg span {
+  background: transparent url(../images/dmg-icon.png) 12px 50% no-repeat;
 }
 #download-tar-gz span {
   background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
@@ -355,7 +372,7 @@ footer a:hover {
   #downloads {
     margin-bottom: 25px;
   }
-  #download-zip, #download-tar-gz {
+  #download-zip, #download-tar-gz, #download-appstore, #download-dmg {
     display: none;
   }
   .inner {
