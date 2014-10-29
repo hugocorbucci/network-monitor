@@ -109,7 +109,7 @@ NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
         UInt32 seedValue;
         NSArray  *loginItemsArray =
             (__bridge NSArray *) LSSharedFileListCopySnapshot(loginItems, &seedValue);
-        for(int i ; i< [loginItemsArray count]; i++){
+        for(int i = 0; i < [loginItemsArray count]; i++){
             LSSharedFileListItemRef itemRef =
                 (__bridge LSSharedFileListItemRef)[loginItemsArray objectAtIndex: i];
             if (LSSharedFileListItemResolve(itemRef, 0, (CFURLRef*) &url, NULL) == noErr) {
