@@ -16,7 +16,7 @@ NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _defaults = [NSUserDefaults standardUserDefaults];
     [_defaults registerDefaults: @{
-        LOGIN_PREFERENCE: [NSNumber numberWithBool:YES],
+        LOGIN_PREFERENCE: [NSNumber numberWithBool:NO],
         SOUND_PREFERENCE: [NSNumber numberWithBool:NO],
         NOTIFICATION_PREFERENCE: [NSNumber numberWithBool:YES]
     }];
