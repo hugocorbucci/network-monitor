@@ -53,6 +53,18 @@ NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
     [_defaults setBool: (launchItem.state ^ 1) forKey: LOGIN_PREFERENCE];
     [self synchronizeLaunchAtLogin: launchItem];
 }
+
+- (IBAction)saveLog:(id)sender {
+    NSSavePanel* savePanel = [NSSavePanel savePanel];
+
+    if ( [savePanel runModal] == NSOKButton )
+    {
+        NSString* log = [self retrieveLog];
+        NSURL* url = [savePanel URL];
+        NSError *writeError = nil;
+        [log writeToFile: [url path] atomically:NO encoding:NSUTF8StringEncoding error:&writeError];
+    }
+}
 #pragma private
 - (void) synchronizeMenuItemsWithPreferences {
     [self synchronizeSoundItem: [_statusMenu itemWithTag: 1]];
@@ -120,6 +132,24 @@ NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
             }
         }
     }
+}
+
+- (NSString*) retrieveLog {
+    NSPipe *pipe = [NSPipe pipe];
+    NSFileHandle *file = [pipe fileHandleForReading];
+
+    NSTask *task = [[NSTask alloc] init];
+    [task setLaunchPath: @"/usr/bin/grep"];
+    [task setArguments: @[@"Network Monitor", @"/private/var/log/system.log"]];
+    [task setStandardOutput: pipe];
+
+    [task launch];
+    [task waitUntilExit];
+
+    NSData *data = [file readDataToEndOfFile];
+    [file closeFile];
+
+    return [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
 }
 
 @end

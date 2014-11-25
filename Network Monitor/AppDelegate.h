@@ -20,5 +20,6 @@
 - (IBAction)toggleSound:(id)sender;
 - (IBAction)toggleNotifications:(id)sender;
 - (IBAction)toggleLaunchAtLogin:(id)sender;
+- (IBAction)saveLog:(id)sender;
 @end
 
