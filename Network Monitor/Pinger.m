@@ -16,20 +16,29 @@
 }
 
 - (BOOL)ping {
-    NSPipe* output = [NSPipe pipe];
-    NSTask* pingTask = [[NSTask alloc] init];
-    [pingTask setLaunchPath: @"/sbin/ping"];
-    [pingTask setArguments: @[
-                               [NSString stringWithFormat: @"-t%@", _timeout],
-                               @"-q",
-                               @"-o",
-                               [NSString stringWithFormat: @"%@", _ipAddress]
-                            ]];
-    [pingTask setStandardOutput:output];
-    [pingTask setStandardError:output];
-    [pingTask launch];
-    [pingTask waitUntilExit];
-    return [pingTask terminationStatus] == 0;
+    @try {
+        NSPipe* output = [NSPipe pipe];
+        NSTask* pingTask = [[NSTask alloc] init];
+        [pingTask setLaunchPath: @"/sbin/ping"];
+        [pingTask setArguments: @[
+                                  [NSString stringWithFormat: @"-t%@", _timeout],
+                                  @"-q",
+                                  @"-o",
+                                  [NSString stringWithFormat: @"%@", _ipAddress]
+                                  ]];
+        [pingTask setStandardOutput:output];
+        [pingTask setStandardError:output];
+        [pingTask launch];
+        [pingTask waitUntilExit];
+        return [pingTask terminationStatus] == 0;
+    }
+    @catch (NSException *exception) {
+        return false;
+    }
+    @finally {
+        
+    }
+    
 }
 
 - (NSString *)description {

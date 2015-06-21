@@ -11,11 +11,18 @@
 @implementation Speaker
 
 - (void)announce:(id)message {
-    NSTask *task = [[NSTask alloc] init];
-    task.launchPath = @"/usr/bin/say";
-    task.arguments  = @[message];
-    [task launch];
-    [task waitUntilExit];
+    @try {
+        NSTask *task = [[NSTask alloc] init];
+        task.launchPath = @"/usr/bin/say";
+        task.arguments  = @[message];
+        [task launch];
+        [task waitUntilExit];
+    }
+    @catch (NSException *exception) {
+        // Ignore exceptions if I couldn't say anything. Not a big deal
+    }
+    @finally {
+    }
 }
 
 @end
