@@ -43,7 +43,7 @@ fi
 rm -Rf "${BUILT_PRODUCTS_DIR}"
 rm -Rf "${INTERMEDIATES_DIR}"
 mkdir -p "${BUILT_PRODUCTS_DIR}"
-BUILT_PRODUCTS_DIR="${BUILT_PRODUCTS_DIR}" xcodebuild -target "${APP_NAME}" -scheme 'Network Monitor' -configuration "#{CONFIGURATION}" build
+BUILT_PRODUCTS_DIR="${BUILT_PRODUCTS_DIR}" xcodebuild -target "${APP_NAME}" -scheme 'Network Monitor' -configuration "${CONFIGURATION}" build
 
 # Ensure temporary folders exist
 mkdir -p "${DMG_DIR}"
