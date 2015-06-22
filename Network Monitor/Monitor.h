@@ -21,7 +21,7 @@
     NSDictionary *_alerts;
     NSMutableDictionary *_enabledAlerts;
 }
-- (id) initWatching: (NSString*) ipAddress andUpdating: (NSStatusItem*) item;
+- (id) initWatching: (NSString* (^)(void)) ipAddressCallback andUpdating: (NSStatusItem*) item every: (NSNumber* (^)(void)) sleepInterval withTimeout: (NSNumber* (^)(void)) timeout;
 - (void) start;
 - (void) setNotificationsEnabled: (BOOL) enabled;
 - (void) setSoundAlertsEnabled: (BOOL) enabled;

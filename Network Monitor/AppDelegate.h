@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Monitor.h"
+#import "PreferenceConstants.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
 @private
@@ -15,6 +16,7 @@
     NSStatusItem * _statusItem;
     Monitor * _monitor;
     NSUserDefaults* _defaults;
+    IBOutlet NSWindow* window;
 }
 
 - (IBAction)toggleSound:(id)sender;

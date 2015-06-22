@@ -9,17 +9,9 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-NSString *const LOGIN_PREFERENCE = @"OpenAtLogin";
-NSString *const SOUND_PREFERENCE = @"SoundAlerts";
-NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _defaults = [NSUserDefaults standardUserDefaults];
-    [_defaults registerDefaults: @{
-        LOGIN_PREFERENCE: [NSNumber numberWithBool:NO],
-        SOUND_PREFERENCE: [NSNumber numberWithBool:NO],
-        NOTIFICATION_PREFERENCE: [NSNumber numberWithBool:YES]
-    }];
     
     float iconWidth = [[NSImage imageNamed: @"unknown"] size].width;
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength: iconWidth];
@@ -27,8 +19,12 @@ NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
     [_statusItem setHighlightMode:YES];
     
     [self synchronizeMenuItemsWithPreferences];
+    [window orderOut: self];
     
-    _monitor = [[Monitor alloc] initWatching: @"4.2.2.2" andUpdating: _statusItem];
+    NSString* (^serverAddressRetriever)() = ^() { return [_defaults stringForKey: SERVER_ADDRESS]; };
+    NSNumber* (^sleepIntervalRetriever)() = ^() { return [NSNumber numberWithInteger: [_defaults integerForKey: REFRESH_INTERVAL]]; };
+    NSNumber* (^timeoutRetriever)() = ^() { return [NSNumber numberWithInteger: [_defaults integerForKey: TIMEOUT]]; };
+    _monitor = [[Monitor alloc] initWatching: serverAddressRetriever andUpdating: _statusItem every: sleepIntervalRetriever withTimeout: timeoutRetriever];
     [_monitor start];
 }
 
@@ -64,6 +60,10 @@ NSString *const NOTIFICATION_PREFERENCE = @"NotificationAlerts";
         NSError *writeError = nil;
         [log writeToFile: [url path] atomically:NO encoding:NSUTF8StringEncoding error:&writeError];
     }
+}
+- (IBAction)openPreferences:(id)sender {
+    [NSApp activateIgnoringOtherApps:YES];
+    [window makeKeyAndOrderFront:NSApp];
 }
 #pragma private
 - (void) synchronizeMenuItemsWithPreferences {

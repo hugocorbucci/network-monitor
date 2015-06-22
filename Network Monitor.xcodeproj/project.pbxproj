@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F99E6581B379A7F003D3DC0 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F99E6571B379A7F003D3DC0 /* PreferenceController.m */; };
+		5F99E65B1B37D002003D3DC0 /* PreferenceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F99E65A1B37D002003D3DC0 /* PreferenceConstants.m */; };
 		CC19379B19F1D3A6005C0EE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC19379919F1D3A6005C0EE0 /* InfoPlist.strings */; };
 		CC6C10CD19F6B00F000A04C0 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC6C10CC19F6B00F000A04C0 /* CoreServices.framework */; };
 		CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CC71CA3019ECAECF00C20354 /* Speaker.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F99E6561B379A6B003D3DC0 /* PreferenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		5F99E6571B379A7F003D3DC0 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		5F99E6591B37CF34003D3DC0 /* PreferenceConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferenceConstants.h; sourceTree = "<group>"; };
+		5F99E65A1B37D002003D3DC0 /* PreferenceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceConstants.m; sourceTree = "<group>"; };
 		CC19379719F1D2E2005C0EE0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC19379A19F1D3A6005C0EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC19379C19F1D3CC005C0EE0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 				CC71CA3519EDADBC00C20354 /* Pinger.m */,
 				CC71CA3719EDB45C00C20354 /* Logger.h */,
 				CC71CA3819EDB48100C20354 /* Logger.m */,
+				5F99E6591B37CF34003D3DC0 /* PreferenceConstants.h */,
+				5F99E65A1B37D002003D3DC0 /* PreferenceConstants.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -184,6 +192,8 @@
 			children = (
 				CCEE216919EC5E7900CAF303 /* AppDelegate.h */,
 				CCEE216A19EC5E7900CAF303 /* AppDelegate.m */,
+				5F99E6561B379A6B003D3DC0 /* PreferenceController.h */,
+				5F99E6571B379A7F003D3DC0 /* PreferenceController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -320,6 +330,8 @@
 				CCEE219119EC656700CAF303 /* Monitor.m in Sources */,
 				CCEE216B19EC5E7900CAF303 /* AppDelegate.m in Sources */,
 				CCEE216819EC5E7900CAF303 /* main.m in Sources */,
+				5F99E6581B379A7F003D3DC0 /* PreferenceController.m in Sources */,
+				5F99E65B1B37D002003D3DC0 /* PreferenceConstants.m in Sources */,
 				CC71CA3619EDADBC00C20354 /* Pinger.m in Sources */,
 				CC71CA3919EDB48100C20354 /* Logger.m in Sources */,
 				CC71CA3119ECAECF00C20354 /* Speaker.m in Sources */,
@@ -463,7 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Network Monitor/Network Monitor.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0;
@@ -481,7 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Network Monitor/Network Monitor.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0;

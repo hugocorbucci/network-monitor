@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6249" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6249"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -15,6 +15,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
                 <outlet property="_statusMenu" destination="7xh-Wl-Xvf" id="ekU-k1-82u"/>
+                <outlet property="window" destination="FmP-jo-y0j" id="5Hs-jR-guR"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -37,6 +38,12 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Dlh-fr-89X"/>
+                <menuItem title="Preferences..." id="0mE-ws-flf">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openPreferences:" target="Voe-Tx-rLC" id="hvi-U2-CCt"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Launch at Login" state="on" tag="3" id="8Ld-Dx-CeZ">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -52,5 +59,96 @@
             </items>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </menu>
+        <customObject id="Ncd-B2-OqP" customClass="PreferenceController">
+            <connections>
+                <outlet property="server" destination="jQr-qw-KVX" id="SgC-YJ-DHx"/>
+                <outlet property="sleepInterval" destination="v6s-RI-0Ac" id="idC-sT-Lrh"/>
+                <outlet property="sleepIntervalStepper" destination="DOr-qC-OeP" id="TXj-H9-Pca"/>
+                <outlet property="timeout" destination="PSO-il-JZJ" id="N3x-Ft-Pzz"/>
+                <outlet property="timeoutStepper" destination="WpQ-1R-bI7" id="4kZ-AN-cFP"/>
+                <outlet property="window" destination="FmP-jo-y0j" id="pyu-gz-8tB"/>
+            </connections>
+        </customObject>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="FmP-jo-y0j" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="120" y="64" width="295" height="122"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="xe2-PP-Lay">
+                <rect key="frame" x="0.0" y="-3" width="295" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXJ-fs-Jtt">
+                        <rect key="frame" x="18" y="83" width="139" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Server to reach out to" id="O1S-gz-MdN">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQr-qw-KVX">
+                        <rect key="frame" x="163" y="81" width="112" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" placeholderString="123.123.123.123" drawsBackground="YES" id="EoH-YE-wD9">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <outlet property="delegate" destination="Ncd-B2-OqP" id="bbp-3V-jCi"/>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGd-1H-apC">
+                        <rect key="frame" x="18" y="53" width="184" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Time between server checks:" id="kZH-K3-xpP">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOr-qC-OeP">
+                        <rect key="frame" x="259" y="47" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="600" doubleValue="5" id="o4G-Cw-xbA"/>
+                        <connections>
+                            <action selector="changeSleepInterval:" target="Ncd-B2-OqP" id="f7Q-kB-KbA"/>
+                        </connections>
+                    </stepper>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v6s-RI-0Ac">
+                        <rect key="frame" x="206" y="53" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="5" id="8Us-ra-8rz">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2P-4q-sGx">
+                        <rect key="frame" x="18" y="23" width="165" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Time out for server check:" id="6R6-El-Sk0">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WpQ-1R-bI7">
+                        <rect key="frame" x="259" y="17" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="600" doubleValue="5" id="lIx-5T-OPA"/>
+                        <connections>
+                            <action selector="changeTimeout:" target="Ncd-B2-OqP" id="qmw-j2-a28"/>
+                        </connections>
+                    </stepper>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-il-JZJ">
+                        <rect key="frame" x="206" y="23" width="50" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="5" id="Ni0-Iw-QQm">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="Ncd-B2-OqP" id="31r-0A-pO5"/>
+            </connections>
+            <point key="canvasLocation" x="50.5" y="211"/>
+        </window>
     </objects>
 </document>

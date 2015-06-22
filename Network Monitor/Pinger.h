@@ -13,10 +13,10 @@
 
 @interface Pinger : NSObject {
     @private
-    NSString *_ipAddress;
-    NSNumber *_timeout;
+    NSString* (^_ipAddressCallback)(void);
+    NSNumber* (^_timeoutCallback)(void);
 }
-- (id) initWatching: ipAddress withTimeout: timeout;
+- (id) initWatching: (NSString* (^)(void)) ipAddressCallback withTimeout: (NSNumber* (^)(void))timeoutCallback;
 - (BOOL) ping;
 @end
 

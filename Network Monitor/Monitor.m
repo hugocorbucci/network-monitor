@@ -14,7 +14,7 @@
 @interface Monitor () {
     @private
     NSDictionary *_messages;
-    NSNumber *_sleepInterval;
+    NSNumber* (^_sleepIntervalCallback)(void);
 }
 
 @end
@@ -27,10 +27,9 @@ NSString *const SOUND_NAME = @"Sound alerts";
 NSString *const NOTIFICATION_NAME = @"Notifications";
 NSString *const LOGGER_NAME = @"Logs";
 
-- (id)initWatching:(NSString *)ipAddress andUpdating:(NSStatusItem *)item {
-    NSNumber *timeout = @5;
-    _sleepInterval = @5;
-    _pinger = [[Pinger alloc] initWatching:ipAddress withTimeout:timeout];
+- (id)initWatching:(NSString* (^)(void))ipAddressCallback andUpdating:(NSStatusItem *)item every: (NSNumber* (^)(void))sleepIntervalCallback withTimeout: (NSNumber* (^)(void))timeoutCallback {
+    _sleepIntervalCallback = sleepIntervalCallback;
+    _pinger = [[Pinger alloc] initWatching:ipAddressCallback withTimeout:timeoutCallback];
     _background = [[NSThread alloc] initWithTarget:self selector:@selector(monitor) object:nil];
     _alerts = @{
         SOUND_NAME : [[Speaker alloc] init],
@@ -82,7 +81,7 @@ NSString *const LOGGER_NAME = @"Logs";
                 [_alerts[alertName] announce: _messages[state]];
             }
         }
-        [NSThread sleepForTimeInterval: [_sleepInterval doubleValue]];
+        [NSThread sleepForTimeInterval: [_sleepIntervalCallback() doubleValue]];
     }
 }
 

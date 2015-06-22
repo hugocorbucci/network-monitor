@@ -9,9 +9,9 @@
 #import "Pinger.h"
 
 @implementation Pinger
-- (id)initWatching:(id)ipAddress withTimeout:(id)timeout {
-    _ipAddress = ipAddress;
-    _timeout = timeout;
+- (id)initWatching:(NSString* (^)(void)) ipAddressCallback withTimeout: (NSNumber* (^)(void)) timeoutCallback {
+    _ipAddressCallback = ipAddressCallback;
+    _timeoutCallback = timeoutCallback;
     return [super init];
 }
 
@@ -21,10 +21,10 @@
         NSTask* pingTask = [[NSTask alloc] init];
         [pingTask setLaunchPath: @"/sbin/ping"];
         [pingTask setArguments: @[
-                                  [NSString stringWithFormat: @"-t%@", _timeout],
+                                  [NSString stringWithFormat: @"-t%@", _timeoutCallback()],
                                   @"-q",
                                   @"-o",
-                                  [NSString stringWithFormat: @"%@", _ipAddress]
+                                  [NSString stringWithFormat: @"%@", _ipAddressCallback()]
                                   ]];
         [pingTask setStandardOutput:output];
         [pingTask setStandardError:output];
@@ -42,7 +42,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat: @"ping -t%@ -q -o %@", _timeout, _ipAddress];
+    return [NSString stringWithFormat: @"ping -t%@ -q -o %@", _timeoutCallback(), _ipAddressCallback()];
 }
 
 @end
