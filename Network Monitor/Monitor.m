@@ -88,6 +88,7 @@ NSString *const LOGGER_NAME = @"Logs";
 - (BOOL) updateItemToState: (NSString*) state {
     NSImage *desired = [NSImage imageNamed: state];
     if (_itemToUpdate.image != desired) {
+        [desired setTemplate: TRUE];
         [_itemToUpdate setImage: desired];
         [_itemToUpdate setToolTip: _messages[state]];
          return true;

@@ -17,6 +17,7 @@
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength: iconWidth];
     [_statusItem setMenu: _statusMenu];
     [_statusItem setHighlightMode:YES];
+    [_statusItem.image setTemplate:YES];
     
     [self synchronizeMenuItemsWithPreferences];
     [window orderOut: self];
